@@ -1,5 +1,5 @@
 # Use NodeJS base image
-FROM node:13
+FROM node:12
 
 # Create app directory in Docker
 WORKDIR /usr/src/app
@@ -9,7 +9,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Install dependencies in Docker
-RUN npm install
+RUN npm install .
 
 # Copy app from local environment into the Docker image
 COPY . .
