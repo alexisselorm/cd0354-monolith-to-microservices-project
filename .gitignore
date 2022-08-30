@@ -22,7 +22,7 @@ coverage/
 www/
 node_modules/
 tmp/
-k8s/*.yml
+# k8s/*.yml
 temp/
 platforms/
 plugins/

@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: udagram-frontend
+  labels:
+    app: udagram-frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: udagram-frontend
+  template:
+    metadata:
+      labels:
+        app: udagram-frontend
+    spec:
+      restartPolicy: Always
+      containers:
+        - name: udagram-frontend
+          imagePullPolicy: Always
+          image: einstein16/udagram-frontend:v4
+          ports:
+            - containerPort: 80
+          resources:
+            limits:
+              cpu: 512m
+            requests:
+              cpu: 256m
