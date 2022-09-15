@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: udagram-frontend
-        image: einstein16/udagram-frontend:v1
+        image: einstein16/udagram-frontend:v2
         imagePullPolicy: Always
         ports:
         - containerPort: 80
