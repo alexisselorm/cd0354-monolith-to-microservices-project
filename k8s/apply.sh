@@ -1,7 +1,11 @@
+
+
 #ENVIRONMENT VARIABLES
 kubectl apply -f aws-secret.yaml
 kubectl apply -f env-secret.yaml
 kubectl apply -f env-configmap.yaml
+
+#METRICS
 
 #DEPLOYMENTS
 kubectl apply -f udagram-api-feed-deployment.yml
