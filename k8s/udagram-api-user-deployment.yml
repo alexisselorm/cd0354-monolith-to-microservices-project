@@ -18,6 +18,15 @@ spec:
       - name: udagram-api-user
         image: einstein16/udagram-api-user:v1
         imagePullPolicy: Always
+        # Resource limits
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "1024Mi"
+            cpu: "500m"  
+                #End of resource limits  
         ports:
         - containerPort: 8080
         envFrom:  
