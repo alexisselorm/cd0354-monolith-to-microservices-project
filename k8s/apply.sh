@@ -1,4 +1,4 @@
-
+#!/bin/bash
 
 #ENVIRONMENT VARIABLES
 kubectl apply -f aws-secret.yaml
