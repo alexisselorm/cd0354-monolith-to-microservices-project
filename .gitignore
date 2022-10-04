@@ -22,9 +22,7 @@ coverage/
 www/
 node_modules/
 tmp/
-k8s/aws-secret.yaml
-k8s/env-secret.yaml
-k8s/env-configmap.yaml
+
 temp/
 platforms/
 plugins/
